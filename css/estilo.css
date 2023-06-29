@@ -13,43 +13,29 @@ body{
     
 }
 /*encabezado*/
-.encabezado  {
+.encabezado {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
     background-color: #313131;
     border: 1px solid rgb(30, 29, 29);
     padding-bottom:20px;
     
 }
 .encabezado h1 {
+    order: 2;
+    flex-grow: 1;
     font-family: 'Lobster', cursive;
     text-align: center;
     color: #079ef6;
     font-size: 70px;
     text-decoration: underline;
-}
-.Buscador {
-    position: absolute;
-    top: 70px;
-    right: 70px;
-}
-.Buscador input {
-    border-radius: .5rem;
-    width: 120px;
-    height: 26px;
-    margin-right: 3px;
-    background-color:#414141 ;
-} 
-.Buscador button {
-    border-radius: .5rem;
-    color: #079ef6;
-    background-color: #525252;
-    width: 50px;
-    height: 26;
+    margin-left: 120px;
 }
 /*barra de navegacion*/
 .encabezado nav {
-    position: absolute;
-    top: 70px;
-    left: 30px;
+    order: 1;
+    margin-left: 20px;
 }
 .encabezado nav a {
     border-radius: .5rem;
@@ -61,9 +47,8 @@ body{
     background-color: #525252;
     }
 .encabezado div {
-    position: absolute;
-    top: 70px;
-    right: 375px;
+    order: 3;
+    margin-right: 90px;
 }
 .encabezado div a {
     border-radius: .5rem;
@@ -74,6 +59,38 @@ body{
     margin-bottom: 1px;
     background-color: #525252;
 }
+nav a:hover {
+    background-color:#434343;
+    color:rgb(179, 178, 178) ;
+}
+div a:hover {
+    background-color:#434343;
+    color:rgb(179, 178, 178) ;
+}
+/*buscador*/
+.Buscador {
+    order: 4;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 20px;
+}
+.Buscador input {
+    border-radius: .5rem;
+    width: 145px;
+    height: 30px;
+    margin-right: 3px;
+    background-color:#414141 ;
+    border: 0;
+} 
+.Buscador button {
+    border-radius: .5rem;
+    color: #079ef6;
+    background-color: #525252;
+    width: 60px;
+    height: 25px;
+    border: 0;
+}
+
 /*Main index*/
 /*recuadro izq*/
 .Section1 {
