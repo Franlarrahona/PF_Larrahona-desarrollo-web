@@ -143,6 +143,12 @@ div a:hover {
     margin-bottom: 200px;
 }
  /*main contacto*/
+ .main_contacto{
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    margin-bottom: 200px;
+ }
 
  .Section3{
     display: inline-block;
@@ -152,9 +158,6 @@ div a:hover {
     border-left: 1px solid rgb(30, 29, 29);
     border-bottom: 1px solid rgb(30, 29, 29);
     background-color: #313131;
-    position: absolute;
-    left: 542px;
-    margin-top: 40px;
  }
  .Section3 p {
     color: #079ef6;
@@ -201,9 +204,6 @@ div a:hover {
     background-image: url(../images/AutoContacto2.jpg);
     background-size: 500px;
     background-position: 35% 80%;
-    position: absolute;
-    right: 541px;
-    margin-top: 40px;
 }
 /*Main general(deporortivos/motos/todoterreno)*/
 
