@@ -7,8 +7,10 @@
     <title>CARS DELUX | Tienda de vehiculos</title>
     <link rel="stylesheet" type="text/css" href="./css/estilo.css">
     <link rel="icon" type="image/png" href="./images/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="body_index">
     <header class="encabezado">
         <h1>CARS DELUX</h1>
         <nav>
@@ -25,15 +27,53 @@
             <button class="boton" type="submit">enviar</button>
         </section>
     </header>
-    <main>
-        <section class="Section1">
-        <p class="Titulo">Sobre Nosotros...</p>
-        <p class="Texto">Cars Delux es una tienda ficticia dedicada a la venta de vehiculos exclusivos.</p>
-        <p class="Texto2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sed quasi numquam vitae incidunt voluptatibus ullam, corporis sit laudantium repellat culpa a laboriosam nulla autem accusantium. Velit non cumque expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. In, repellat iure. Iure unde odio veritatis culpa earum ipsa vero atque doloremque et dignissimos asperiores, dolore ducimus sed tenetur quos illum!</p>
+    <main class="main_index">
+        <section class="section1_index">
+        <p class="titulo_index">Sobre Nosotros...</p>
+        <p class="texto_index">Cars Delux es una tienda ficticia dedicada a la venta de vehiculos exclusivos.</p>
+        <p class="texto_index">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sed quasi numquam vitae incidunt voluptatibus ullam, corporis sit laudantium repellat culpa a laboriosam nulla autem accusantium. Velit non cumque expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. In, repellat iure. Iure unde odio veritatis culpa earum ipsa vero atque doloremque et dignissimos asperiores, dolore ducimus sed tenetur quos illum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eos saepe perferendis voluptas. Fuga quis earum et quaerat recusandae dolorum veritatis nesciunt accusantium vitae, cupiditate est adipisci obcaecati facere aliquid?</p>
         </section>
-        <section class="Section2">
-            
-            <!-- <img src="./images/AutoInicio.jpg" alt="Auto Deportivo"> -->
+        <section class="section2_index">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/Auto_inicio_carousel_1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/Moto_inicio_carousel_2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/Todoterre_inicio_carousel_3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+        <section class="section3_index">
+            <div class="caract_confianza">
+            <p class="caract_index_titulo">Confianza</p>
+            <p class="info_index">Comprás tu auto 100% verificado por expertos, con garantía técnica y garantía de documentación</p>
+            </div>
+            <div class="caract_seguridad">
+            <p class="caract_index_titulo">Seguridad</p>
+            <p class="info_index">Pagás lo que corresponde, te ayudamos a financiarlo y lo aseguramos con las mejores condiciones y precio.</p>
+            </div>
+            <div class="caract_agilidad">
+            <p class="caract_index_titulo">Agilidad</p>
+            <p class="info_index">Simplificamos el proceso de transferencia y te llevamos el auto al lugar que necesites.</p>
+            </div>
         </section>
     </main>
     <footer>

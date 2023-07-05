@@ -92,8 +92,87 @@ div a:hover {
 }
 
 /*Main index*/
+.body_index{
+    background-color: #525252;
+}
+.main_index {
+    display: grid;
+    grid-template-areas: 
+    "section1 section2 section2"
+    "section1 section2 section2"
+    "section1 section3 section3";
+    margin: 130px 80px;
+    column-gap: 25px ;
+    row-gap: 25px ;
+    
+    
+
+}
+.section1_index {
+grid-area: section1;
+background-color: #313131;
+border-radius: 1%;
+border: 1px solid rgb(17, 17, 17);
+}
+.titulo_index {
+    color: #079ef6;
+    font-size: 35px;
+    text-align: center;
+}
+.texto_index {
+    color: black;
+    font-weight: 1000;
+    font-size: 23px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.section2_index {
+grid-area: section2;
+}
+.section3_index {
+grid-area: section3;
+display:flex;
+justify-content: space-around ;
+background-color:#313131 ;
+color: black;
+border-radius: 1%;
+border: 1px solid rgb(17, 17, 17);
+}
+
+.caract_index_titulo{
+    color: #079ef6;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.info_index{
+    text-align: center;
+    font-size: 19px;
+    font-weight: 700;
+}
+.caract_seguridad{
+    
+}
+.caract_confianza{
+    margin-left: 20px;
+}
+.caract_agilidad{
+    
+}
+
+
+
+
+
+
+
+
+
+
 /*recuadro izq*/
-.Section1 {
+/*.Section1 {
     display: inline-block;
     width: 400px;
     height: 600px;
@@ -127,7 +206,7 @@ div a:hover {
     margin-right: 30px;
 }
 /*recuadro der*/
-.Section2 {
+/*.Section2 {
     display: inline-block;
     width: 400px;
     height: 600px;
@@ -141,7 +220,7 @@ div a:hover {
     right: 541px;
     margin-top: 120px;
     margin-bottom: 200px;
-}
+}*/
  /*main contacto*/
  .main_contacto{
     display: flex;
@@ -150,7 +229,7 @@ div a:hover {
     margin-bottom: 200px;
  }
 
- .Section3{
+ .section1_contacto{
     display: inline-block;
     width: 400px;
     height: 600px;
@@ -159,42 +238,42 @@ div a:hover {
     border-bottom: 1px solid rgb(30, 29, 29);
     background-color: #313131;
  }
- .Section3 p {
+ .section1_contacto p {
     color: #079ef6;
     font-size: 35px;
     margin-top: 20px;
     margin-left: 130px;
  }
 
- .Section3 ol {
+ .section1_contacto ol {
     color: white;
     font-size: 20px;
     margin-left: 140px;
     margin-top: 20px;
  }
- .Section3 ol .Numero{
+ .section1_contacto ol .Numero{
     margin-bottom: 25px;
     font-weight: 1000;
     list-style-image: url(../images/IconoTelefono.png); 
     
 }
-.Section3 ol .Correo{
+.section1_contacto ol .Correo{
     margin-bottom: 25px;
     font-weight: 1000;
     list-style-image: url(../images/IconoSobre.png);    
 }
-.Section3 ol .Mapa{
+.section1_contacto ol .Mapa{
     margin-bottom: 25px;
     font-weight: 1000;
     list-style-image: url(../images/IconoMaps.png);    
 }
-.Section3 iframe{
+.section1_contacto iframe{
     width: 300px;
     height: 200px;
     margin-top: 20px;
     margin-left: 50px;
 }
-.Section4{
+.section2_contacto{
     display: inline-block;
     width: 400px;
     height: 600px;
