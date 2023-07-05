@@ -45,6 +45,7 @@ body{
     margin-right: 15px;
     margin-bottom: 1px;
     background-color: #525252;
+    text-decoration: none;
     }
 .encabezado div {
     order: 3;
@@ -58,6 +59,7 @@ body{
     margin-right: 15px;
     margin-bottom: 1px;
     background-color: #525252;
+    text-decoration: none;
 }
 nav a:hover {
     background-color:#434343;
@@ -92,7 +94,7 @@ div a:hover {
 }
 
 /*Main index*/
-.body_index{
+.body_index {
     background-color: #525252;
 }
 .main_index {
@@ -101,20 +103,16 @@ div a:hover {
     "section1 section2 section2"
     "section1 section2 section2"
     "section1 section3 section3";
-    margin: 130px 80px;
+    margin: 80px 80px;
     column-gap: 25px ;
     row-gap: 25px ;
-    
-    
-
 }
 .section1_index {
-grid-area: section1;
-background-color: #313131;
-border-radius: 1%;
-border: 1px solid rgb(17, 17, 17);
+    grid-area: section1;
+    background-color: #313131;
 }
 .titulo_index {
+    font-family: 'Lobster', cursive;
     color: #079ef6;
     font-size: 35px;
     text-align: center;
@@ -128,158 +126,129 @@ border: 1px solid rgb(17, 17, 17);
     margin-right: 50px;
 }
 .section2_index {
-grid-area: section2;
+    grid-area: section2;
 }
 .section3_index {
-grid-area: section3;
-display:flex;
-justify-content: space-around ;
-background-color:#313131 ;
-color: black;
-border-radius: 1%;
-border: 1px solid rgb(17, 17, 17);
+    grid-area: section3;
+    display:flex;
+    justify-content: space-around ;
+    background-color:#313131 ;
+    color: black;
+    border-radius: 1%;
 }
-
-.caract_index_titulo{
+.caract_index_titulo {
+    font-family: 'Lobster', cursive;
     color: #079ef6;
     text-align: center;
     font-size: 25px;
     font-weight: 600;
     text-decoration: underline;
 }
-.info_index{
+.info_index {
     text-align: center;
     font-size: 19px;
     font-weight: 700;
 }
 
-.caract_confianza{
+.caract_confianza {
     margin-left: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-/*recuadro izq*/
-/*.Section1 {
-    display: inline-block;
-    width: 400px;
-    height: 600px;
-    border-top: 1px solid rgb(30, 29, 29);
-    border-left: 1px solid rgb(30, 29, 29);
-    border-bottom: 1px solid rgb(30, 29, 29);
-    background-color: #313131;
-    position: relative;
-    left: 542px;
-    margin-top: 120px;
-    margin-bottom: 200px;
+/*main contacto*/
+.body_contacto {
+    background-color: #525252;
+    color: rgb(17, 17, 17);
 }
-.Section1 .Titulo {
-    color: #079ef6;
-    font-size: 35px;
-    margin-top: 20px;
-    margin-left: 30px;
+.main_contacto {
+    display: grid;
+    grid-template-areas: 
+    "contacto contacto contacto contacto"
+    "telefono telefono maps maps"
+    "mail mail maps maps"
+    "direccion direccion maps maps"
+    "redes redes redes redes ";
+    row-gap: 40px;
+    margin-top: 80px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 75px;
 }
-.Section1 .Texto {
-    font-weight: 1000;
-    font-size: 20px ;
-    margin-top: 20px;
-    margin-left: 30px;
-    margin-right: 30px;
-
+.titulo_contacto {
+    grid-area: contacto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url(../images/Auto_contacto_titulo.jpg);
+    height: 135px;
 }
-.Section1 .Texto2 {
-    font-weight: 1000;
-    font-size: 20px ;
-    margin-left: 30px;
-    margin-right: 30px;
+.h2_titulo_contacto{ 
+    font-family: 'Lobster', cursive;
+    font-size:89px;
+    color:#079ef6;
+    margin-right: 20px;
+    text-decoration:underline;
 }
-/*recuadro der*/
-/*.Section2 {
-    display: inline-block;
-    width: 400px;
-    height: 600px;
-    border-top: 1px solid rgb(30, 29, 29);
-    border-right: 1px solid rgb(30, 29, 29);
-    border-bottom: 1px solid rgb(30, 29, 29);
-    background-image: url(../images/AutoInicio.jpg);
-    background-size: 905px;
-    background-position: 35% 80%;
-    position: absolute;
-    right: 541px;
-    margin-top: 120px;
-    margin-bottom: 200px;
-}*/
- /*main contacto*/
- .main_contacto{
+.telefono_contacto {
+    grid-area: telefono;
     display: flex;
     justify-content: center;
-    margin-top: 120px;
-    margin-bottom: 200px;
- }
-
- .section1_contacto{
-    display: inline-block;
-    width: 400px;
-    height: 600px;
-    border-top: 1px solid rgb(30, 29, 29);
-    border-left: 1px solid rgb(30, 29, 29);
-    border-bottom: 1px solid rgb(30, 29, 29);
+    align-items: center;
     background-color: #313131;
- }
- .section1_contacto p {
+    width: 550px;
+}
+.mail_contacto {
+    grid-area: mail;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #313131;
+    width: 550px;
+}
+.direccion_contacto {
+    grid-area: direccion;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #313131;
+    width: 550px;
+}
+.info_contacto {
+    font-family: 'Lobster', cursive;
     color: #079ef6;
     font-size: 35px;
-    margin-top: 20px;
-    margin-left: 130px;
- }
-
- .section1_contacto ol {
-    color: white;
-    font-size: 20px;
-    margin-left: 140px;
-    margin-top: 20px;
- }
- .section1_contacto ol .Numero{
-    margin-bottom: 25px;
-    font-weight: 1000;
-    list-style-image: url(../images/IconoTelefono.png); 
+}
+.maps_contacto {
+    grid-area: maps;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
     
+
 }
-.section1_contacto ol .Correo{
-    margin-bottom: 25px;
-    font-weight: 1000;
-    list-style-image: url(../images/IconoSobre.png);    
+.redes_contacto {
+    grid-area: redes;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:20px;
+    background-color: #313131;
+
 }
-.section1_contacto ol .Mapa{
-    margin-bottom: 25px;
-    font-weight: 1000;
-    list-style-image: url(../images/IconoMaps.png);    
+.redes_contacto div a img {
+    width: 40px;
 }
-.section1_contacto iframe{
-    width: 300px;
-    height: 200px;
-    margin-top: 20px;
-    margin-left: 50px;
+.redes_icono_contacto{
+    filter: contrast(0%);
 }
-.section2_contacto{
-    display: inline-block;
-    width: 400px;
-    height: 600px;
-    border-top: 1px solid rgb(30, 29, 29);
-    border-right: 1px solid rgb(30, 29, 29);
-    border-bottom: 1px solid rgb(30, 29, 29);
-    background-image: url(../images/AutoContacto2.jpg);
-    background-size: 500px;
-    background-position: 35% 80%;
+.redes_icono_contacto:hover {
+    filter: contrast(100%); 
 }
+a {
+    text-decoration: none;
+}
+
+
+
 /*Main general(deporortivos/motos/todoterreno)*/
 
 .MainDeportivos{
@@ -309,7 +278,7 @@ border: 1px solid rgb(17, 17, 17);
     margin-right: 30px;
 }
 /*main deportivos*/
- .img1 {
+.img1 {
     background-image: url(../images/deportivos/CoilVoltic150.000.jpg);
     background-position: 50% 50%;
     background-size: 100%;
@@ -474,14 +443,14 @@ border: 1px solid rgb(17, 17, 17);
     margin-left: 20px;
 }
 /*Footer*/
-footer{
+footer {
     display: flex;
     justify-content: space-between;
     border: 1px solid rgb(30, 29, 29);
     background-color: #313131;
     margin-bottom: 0px;   
 }
-.redes{
+.redes {
     
     top: 5px;
     right: 200px;
@@ -493,16 +462,16 @@ footer{
     color:black;
     list-style:  none;
 }
-.redes a{
+.redes a {
     color: rgba(0, 0, 0, 0.571);
     font-size: 13px;
 }
-.redes li a{
+.redes li a {
     color: rgba(0, 0, 0, 0.571);
     font-size: 12px;
     
 }
-.medio{ 
+.medio { 
     top: 15px;
     right: 750px;
     text-align: center;
