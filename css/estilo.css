@@ -8,8 +8,8 @@
     text-decoration: none;
     
 }
-body{
-    background-color: #525252;
+ body{
+     background-color: #525252 !important; 
     
 }
 /*encabezado*/
@@ -252,12 +252,13 @@ div a:hover {
 
 
 /*Main general(deporortivos/motos/todoterreno)*/
-
+}
 .MainDeportivos{
     display: flex;
     flex-direction: row ;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin: 80px 80px;
     
 }
 .Producto {
@@ -614,14 +615,25 @@ footer {
     font-size: 13px;
     font-weight: 700;
 }
-/*barra de nav*/
+
+/*main de motos/deportivos/todoterreno*/
+.MainDeportivos{
+    margin-top: 0;
+}
+section .Producto {
+    width: 90%;
+}
+.Producto div {
+    width: 90%;
+    height: 60%;
+}
+/*barra de nav mobile*/
 .navegacion_mobile{
     position: fixed;
     bottom: 0px;
     right: 0px;
     left: 0;
     background-color: #222222;
-    
     padding-top:10px;
     padding-left: 5px;
     padding-right: 5px;
@@ -629,6 +641,7 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    z-index: 1;
 }
 .titulo_nav_mobile {
     color: white;
