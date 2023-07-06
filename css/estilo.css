@@ -626,6 +626,7 @@ section .Producto {
 .Producto div {
     width: 90%;
     height: 60%;
+    overflow: hide;
 }
 /*barra de nav mobile*/
 .navegacion_mobile{
