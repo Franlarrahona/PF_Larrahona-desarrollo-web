@@ -252,7 +252,6 @@ div a:hover {
 
 
 /*Main general(deporortivos/motos/todoterreno)*/
-}
 .MainDeportivos{
     display: flex;
     flex-direction: row ;
@@ -626,7 +625,7 @@ section .Producto {
 .Producto div {
     width: 90%;
     height: 60%;
-    overflow: hide;
+    overflow: hidden;
 }
 /*barra de nav mobile*/
 .navegacion_mobile{
