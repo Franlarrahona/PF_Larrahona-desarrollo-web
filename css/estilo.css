@@ -6,7 +6,6 @@
     padding: 0;
     font-family: 'Titillium Web', sans-serif;
     text-decoration: none;
-    
 }
  body{
      background-color: #525252 !important; 
@@ -237,10 +236,12 @@ div a:hover {
     justify-content: space-evenly;
     padding:20px;
     background-color: #313131;
-
 }
 .redes_contacto div a img {
     width: 40px;
+}
+.redes_contacto div a {
+    text-decoration: none;
 }
 .redes_icono_contacto{
     filter: contrast(0%);
@@ -248,10 +249,7 @@ div a:hover {
 .redes_icono_contacto:hover {
     filter: contrast(100%); 
 }
-
-
-
-/*Main general(deporortivos/motos/todoterreno)*/
+/*Main vehiculos*/
 .MainDeportivos{
     display: flex;
     flex-direction: row ;
@@ -261,11 +259,12 @@ div a:hover {
     
 }
 .Producto {
-    border: 1px solid rgb(30, 29, 29);
     background-color: #313131;
     width: 450px;
-    height: 300px;
     margin: 20px;
+}
+.imagen_producto {
+    width: 100%;
 }
 .Producto p {
     color: white;
@@ -275,175 +274,13 @@ div a:hover {
     margin-top: 2px;
     margin-left: 20px;   
 }
-.Producto .precio{
+.precio {
     text-align: right;
-    margin-right: 30px;
+    margin-right:20px;
+    margin-bottom: 10px;
 }
-/*main deportivos*/
-.img1 {
-    background-image: url(../images/deportivos/CoilVoltic150.000.jpg);
-    background-position: 50% 50%;
-    background-size: 100%;
-    width: 400px;
-    height:200px  ;
-    margin-top: 15px;
-    margin-left: 20px;
-}
-.img2 {
-    background-image: url(../images/deportivos/GrottiTurismoR500.000.jpg);
-    background-position: 50% 50%;
-    background-size: 100%;
-    width: 400px;
-    height:200px  ;
-    margin-top: 15px;
-    margin-left: 20px;
-}
-.img3 {
-    background-image: url(../images/deportivos/PegassiZentorno720.000.jpg);
-    background-position: 50% 50%;
-    background-size: 100%;
-    width: 400px;
-    height:200px  ;
-    margin-top: 15px;
-    margin-left: 20px;
-}
-.img4 {
-    background-image: url(../images/deportivos/TruffadeNero1.440.000.jpg);
-    background-position: 50% 50%;
-    background-size: 100%;
-    width: 400px;
-    height:200px  ;
-    margin-top: 15px;
-    margin-left: 20px;
-}
-.img5 {
-    background-image: url(../images/deportivos/OcelotXA-212.375.000.jpg);
-    background-position: 50% 50%;
-    background-size: 100%;
-    width: 400px;
-    height:200px  ;
-    margin-top: 15px;
-    margin-left: 20px;
-}
-.img6 {
-    background-image: url(../images/deportivos/ProgenT202.200.000.jpg);
-    background-position: 50% 50%;
-    background-size: 100%;
-    width: 400px;
-    height:200px  ;
-    margin-top: 15px;
-    margin-left: 20px;
-}
-/*main motos*/
-.imgMoto1 {
-    background-image: url(../images/motos/pegassiRufiian10.000.jpg);
-    background-position: 50% 50%;
-    background-size: 100%;
-    width: 400px;
-    height:200px  ;
-    margin-top: 15px;
-    margin-left: 20px;
-}
-.imgMoto2 {
-    background-image: url(../images/motos/DinkaDouble-T12.000.jpg);
-    background-position: 50% 50%;
-    background-size: 100%;
-    width: 400px;
-    height:200px  ;
-    margin-top: 15px;
-    margin-left: 20px;
-}
-.imgMoto3 {
-    background-image: url(../images/motos/NagasakiCarbonRS40.000.jpg);
-    background-position: 50% 50%;
-    background-size: 100%;
-    width: 400px;
-    height:200px  ;
-    margin-top: 15px;
-    margin-left: 20px;
-}
-.imgMoto4 {
-    background-image: url(../images/motos/MaibatsuManchez67.000.jpg);
-    background-position: 50% 50%;
-    background-size: 100%;
-    width: 400px;
-    height:200px  ;
-    margin-top: 15px;
-    margin-left: 20px;
-}
-.imgMoto5 {
-    background-image: url(../images/motos/DinkaThrust75000.jpg);
-    background-position: 50% 50%;
-    background-size: 100%;
-    width: 400px;
-    height:200px  ;
-    margin-top: 15px;
-    margin-left: 20px;
-}
-.imgMoto6 {
-    background-image: url(../images/motos/peggasivortex356.000.jpg);
-    background-position: 50% 50%;
-    background-size: 100%;
-    width: 400px;
-    height:200px  ;
-    margin-top: 15px;
-    margin-left: 20px;
-}
-/*main todoterreno*/
-.imgTodo1 {
-    background-image: url(../images/todoterrenos/NagasakiOutlaw951.000.jpg);
-    background-position: 50% 50%;
-    background-size: 100%;
-    width: 400px;
-    height:200px  ;
-    margin-top: 15px;
-    margin-left: 20px;
-}
-.imgTodo2 {
-    background-image: url(../images/todoterrenos/VapidCaracara4x4-875.000.jpg);
-    background-position: 50% 50%;
-    background-size: 100%;
-    width: 400px;
-    height:200px  ;
-    margin-top: 15px;
-    margin-left: 20px;
-}
-.imgTodo3 {
-    background-image: url(../images/todoterrenos/AnnisHellion835000.jpg);
-    background-position: 50% 50%;
-    background-size: 100%;
-    width: 400px;
-    height:200px  ;
-    margin-top: 15px;
-    margin-left: 20px;
-}
-.imgTodo4 {
-    background-image: url(../images/todoterrenos/VapidSandkingXL380.000.jpg);
-    background-position: 50% 50%;
-    background-size: 100%;
-    width: 400px;
-    height:200px  ;
-    margin-top: 15px;
-    margin-left: 20px;
-}
-.imgTodo5 {
-    background-image: url(../images/todoterrenos/CanisKamacho345.000.jpg);
-    background-position: 50% 50%;
-    background-size: 100%;
-    width: 400px;
-    height:200px  ;
-    margin-top: 15px;
-    margin-left: 20px;
-}
-.imgTodo6 {
-    background-image: url(../images/todoterrenos/BenefactorDubsta\ 6x6-249.000.jpg);
-    background-position: 50% 50%;
-    background-size: 100%;
-    width: 400px;
-    height:200px  ;
-    margin-top: 15px;
-    margin-left: 20px;
-}
+
+
 /*Footer*/
 footer {
     display: flex;
@@ -497,7 +334,7 @@ footer {
 /* responsive*/
 @media (max-width: 525px) {
 
-/* Encabezado */
+/* Encabezado responsive */
 .encabezado {
     display: flex;
     flex-direction: row;
@@ -530,7 +367,7 @@ footer {
 }
 
 
-/* Buscador */
+/* Buscador responsive*/
 .Buscador {
     display: flex;
     flex-wrap: nowrap;
@@ -562,7 +399,7 @@ footer {
     margin-left: 5px;
 }
 
-/* Main index */
+/* Main index responsive*/
 .main_index {
     display: flex;
     justify-content: center;
@@ -615,7 +452,7 @@ footer {
     font-weight: 700;
 }
 
-/*main de motos/deportivos/todoterreno*/
+/*main de motos/deportivos/todoterreno responsive */
 .MainDeportivos{
     margin-top: 0;
 }
@@ -625,6 +462,12 @@ section .Producto {
 .Producto div {
     width: 90%;
     height: 60%;
+    overflow: hidden;
+}
+.Producto p {
+    font-size: 20px;
+}
+.imgMoto1{
     overflow: hidden;
 }
 /*barra de nav mobile*/
@@ -649,7 +492,7 @@ section .Producto {
     text-align: center;
 
 }
-/* Footer */
+/* Footer responsive */
 footer {
     display: flex;
     flex-wrap: nowrap;
