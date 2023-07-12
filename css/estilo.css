@@ -455,15 +455,13 @@ footer {
 
 /*main de motos/deportivos/todoterreno responsive */
 .MainDeportivos{
-    margin-top: 0;
+    margin: 10% 10%;
 }
-section .Producto {
-    width: 90%;
-}
-.Producto div {
-    width: 90%;
-    height: 60%;
-    overflow: hidden;
+
+.Producto {
+    flex-direction: column;
+    margin-left: 0%;
+    margin-right: 0%;
 }
 .Producto p {
     font-size: 20px;
@@ -516,14 +514,17 @@ footer {
 }
 
 .medio {
-    margin: 10px;
+    margin: 8px;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 .medio a {
     font-size: 12px;
     margin-right: 5px;
+}
+.redes{
+    margin-bottom: 50px;
 }
 .redes p {
     display: none;
