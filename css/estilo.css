@@ -236,6 +236,7 @@ div a:hover {
     justify-content: space-evenly;
     padding:20px;
     background-color: #313131;
+    margin-bottom: 40px;
 }
 .redes_contacto div a img {
     width: 40px;
@@ -486,11 +487,18 @@ section .Producto {
     justify-content: space-between;
     z-index: 1;
 }
+.navegacion_mobile div a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navegacion_mobile img {
+    width: 45%;
+}
 .titulo_nav_mobile {
     color: white;
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
-
 }
 /* Footer responsive */
 footer {
