@@ -1,0 +1,110 @@
+.main_contacto {
+    display: grid;
+    grid-template-areas: 
+    "contacto contacto contacto contacto"
+    "telefono telefono maps maps"
+    "mail mail maps maps"
+    "direccion direccion maps maps"
+    "redes redes redes redes ";
+    row-gap: 40px;
+    margin-top: 80px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 75px;
+    .titulo_contacto {
+        grid-area: contacto;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background-image: url(../images/Auto_contacto_titulo.jpg);
+        height: 135px;
+        .h2_titulo_contacto{ 
+            font-family: 'Lobster', cursive;
+            font-size:89px;
+            color:#079ef6;
+            margin-right: 20px;
+            text-decoration:underline;
+        }
+    }
+    .telefono_contacto {
+        grid-area: telefono;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #313131;
+        width: 550px;
+        img{
+            height: 60%;
+        }
+        .info_contacto {
+            font-family: 'Lobster', cursive;
+            color: #ffffff;
+            font-size: 35px;
+            margin-bottom: 0;
+            margin-left: 10px;
+        }
+    }
+    .mail_contacto {
+        grid-area: mail;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #313131;
+        width: 550px;
+        img{
+            height: 60%;
+        }
+        .info_contacto {
+            font-family: 'Lobster', cursive;
+            color: #ffffff;
+            font-size: 35px;
+            margin-left: 10px;
+            margin-bottom: 0px;
+        }
+    }
+    .direccion_contacto {
+        grid-area: direccion;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #313131;
+        width: 550px;
+        img{
+            height: 60%;
+        }
+        .info_contacto {
+            font-family: 'Lobster', cursive;
+            color: #ffffff;
+            font-size: 35px;
+            margin-bottom: 0;
+            margin-left: 10px;
+        }
+    }
+    .maps_contacto {
+        grid-area: maps;
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+        
+    
+    }
+    .redes_contacto {
+        grid-area: redes;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding:20px;
+        background-color: #313131;
+        margin-bottom: 40px;
+            a {
+            text-decoration: none;
+            .redes_icono_contacto {
+                filter: contrast(0%);
+                width: 40px;
+                &:hover {
+                    filter: contrast(100%); 
+                }
+            }
+        }
+    }
+}
