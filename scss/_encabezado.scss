@@ -2,31 +2,41 @@
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-    background-color: #313131;
+    background-color: map-get($colores_web,color_secundario);
     border: 1px solid rgb(30, 29, 29);
     padding-bottom:20px;
     h1 {
         order: 2;
         flex-grow: 1;
-        font-family: 'Lobster', cursive;
+        font-family: $cursiva;
         text-align: center;
-        color: #079ef6;
+        color: map-get($colores_web,color_primario);
         font-size: 70px;
         text-decoration: underline;
         margin-left: 120px;
+        animation-name: efecto_titulo;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        animation-duration: 4s;
+        animation-delay: 1s;
+
     }
     nav {
         order: 1;
         margin-left: 20px;
         a {
             border-radius: .5rem;
-            color: white;
+            color: map-get($colores_web,color_letra) ;
             padding: 5px 15px;
             border: 1px solid rgb(30, 29, 29);
             margin-right: 15px;
             margin-bottom: 1px;
-            background-color: #525252;
+            background-color: map-get($colores_web,color_cuaternario);
             text-decoration: none;
+            &:hover {
+                background-color: map-get($colores_web,color_cuaternario);
+                color:rgb(179, 178, 178) ;
+            }
         }
     }
     div {
@@ -34,15 +44,15 @@
         margin-right: 90px;
         a {
             border-radius: .5rem;
-            color: white;
+            color: map-get($colores_web,color_letra);
             padding: 5px 15px;
             border: 1px solid rgb(30, 29, 29);
             margin-right: 15px;
             margin-bottom: 1px;
-            background-color: #525252;
+            background-color: map-get($colores_web,color_cuaternario);
             text-decoration: none;
             &:hover {
-                background-color:#434343;
+                background-color: map-get($colores_web,color_cuaternario);
                 color:rgb(179, 178, 178) ;
             }
         }
@@ -57,13 +67,13 @@
             width: 145px;
             height: 30px;
             margin-right: 3px;
-            background-color:#414141 ;
+            background-color:map-get($colores_web,color_cuaternario);;
             border: 0;
         } 
         button {
             border-radius: .5rem;
-            color: #079ef6;
-            background-color: #525252;
+            color: map-get($colores_web,color_primario);
+            background-color: map-get($colores_web,color_cuaternario);
             width: 60px;
             height: 25px;
             border: 0;

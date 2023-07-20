@@ -9,12 +9,17 @@
     row-gap: 25px ;
     .section1_index {
         grid-area: section1;
-        background-color: #313131;
+        background-color: map-get($colores_web,color_secundario);
         .titulo_index {
-            font-family: 'Lobster', cursive;
-            color: #079ef6;
+            font-family: $cursiva;
+            color: map-get($colores_web,color_primario);
             font-size: 35px;
             text-align: center;
+            animation-name: efecto_titulo;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+            animation-duration: 4s;
+            animation-delay: 1s;
         }
         .texto_index {
             color: black;
@@ -32,19 +37,24 @@
         grid-area: section3;
         display:flex;
         justify-content: space-around ;
-        background-color:#313131 ;
+        background-color: map-get($colores_web,color_secundario) ;
         color: black;
         border-radius: 1%;
         .caract_confianza {
             margin-left: 20px;
         }
         .caract_index_titulo {
-            font-family: 'Lobster', cursive;
-            color: #079ef6;
+            font-family: $cursiva;
+            color: map-get($colores_web,color_primario);
             text-align: center;
             font-size: 25px;
             font-weight: 600;
             text-decoration: underline;
+            animation-name: efecto_titulo;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+            animation-duration: 4s;
+            animation-delay: 1s;
         }
         .info_index {
             text-align: center;

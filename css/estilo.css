@@ -1,6 +1,22 @@
-/*Generalidades*/
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+/*mapas*/
+/*condcionales*/
+/*temas disponibles: default/claro/oscuro/rainbow*/
+/*variables*/
+/*mixin*/
+/*keyframes*/
+@keyframes efecto_titulo {
+  25% {
+    filter: drop-shadow(0px 0px 2px #079ef6);
+  }
+  50% {
+    filter: drop-shadow(0px 0px 3px #079ef6);
+  }
+  75% {
+    filter: drop-shadow(0px 0px 2px #079ef6);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +25,7 @@
 }
 
 body {
-  background-color: #525252 !important;
+  background: linear-gradient(29deg, rgb(159, 159, 159) 0%, rgb(60, 60, 60) 100%) !important;
 }
 
 .encabezado {
@@ -29,6 +45,11 @@ body {
   font-size: 70px;
   text-decoration: underline;
   margin-left: 120px;
+  animation-name: efecto_titulo;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-duration: 4s;
+  animation-delay: 1s;
 }
 .encabezado nav {
   order: 1;
@@ -41,8 +62,12 @@ body {
   border: 1px solid rgb(30, 29, 29);
   margin-right: 15px;
   margin-bottom: 1px;
-  background-color: #525252;
+  background-color: #414141;
   text-decoration: none;
+}
+.encabezado nav a:hover {
+  background-color: #414141;
+  color: rgb(179, 178, 178);
 }
 .encabezado div {
   order: 3;
@@ -55,11 +80,11 @@ body {
   border: 1px solid rgb(30, 29, 29);
   margin-right: 15px;
   margin-bottom: 1px;
-  background-color: #525252;
+  background-color: #414141;
   text-decoration: none;
 }
 .encabezado div a:hover {
-  background-color: #434343;
+  background-color: #414141;
   color: rgb(179, 178, 178);
 }
 .encabezado .Buscador {
@@ -79,7 +104,7 @@ body {
 .encabezado .Buscador button {
   border-radius: 0.5rem;
   color: #079ef6;
-  background-color: #525252;
+  background-color: #414141;
   width: 60px;
   height: 25px;
   border: 0;
@@ -105,6 +130,11 @@ body {
   color: #079ef6;
   font-size: 35px;
   text-align: center;
+  animation-name: efecto_titulo;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-duration: 4s;
+  animation-delay: 1s;
 }
 .main_index .section1_index .texto_index {
   color: black;
@@ -135,6 +165,11 @@ body {
   font-size: 25px;
   font-weight: 600;
   text-decoration: underline;
+  animation-name: efecto_titulo;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-duration: 4s;
+  animation-delay: 1s;
 }
 .main_index .section3_index .info_index {
   text-align: center;
@@ -165,6 +200,11 @@ body {
   color: #079ef6;
   margin-right: 20px;
   text-decoration: underline;
+  animation-name: efecto_titulo;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-duration: 4s;
+  animation-delay: 1s;
 }
 .main_contacto .telefono_contacto {
   grid-area: telefono;
@@ -176,10 +216,15 @@ body {
 }
 .main_contacto .telefono_contacto img {
   height: 60%;
+  animation-name: efecto_titulo;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-duration: 4s;
+  animation-delay: 1s;
 }
 .main_contacto .telefono_contacto .info_contacto {
   font-family: "Lobster", cursive;
-  color: #ffffff;
+  color: white;
   font-size: 35px;
   margin-bottom: 0;
   margin-left: 10px;
@@ -193,11 +238,21 @@ body {
   width: 550px;
 }
 .main_contacto .mail_contacto img {
-  height: 60%;
+  height: 55%;
+  animation-name: efecto_titulo;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-name: efecto_titulo;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-duration: 4s;
+  animation-delay: 1s;
 }
 .main_contacto .mail_contacto .info_contacto {
   font-family: "Lobster", cursive;
-  color: #ffffff;
+  color: white;
   font-size: 35px;
   margin-left: 10px;
   margin-bottom: 0px;
@@ -211,11 +266,16 @@ body {
   width: 550px;
 }
 .main_contacto .direccion_contacto img {
-  height: 60%;
+  height: 55%;
+  animation-name: efecto_titulo;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-duration: 4s;
+  animation-delay: 1s;
 }
 .main_contacto .direccion_contacto .info_contacto {
   font-family: "Lobster", cursive;
-  color: #ffffff;
+  color: white;
   font-size: 35px;
   margin-bottom: 0;
   margin-left: 10px;
@@ -257,9 +317,16 @@ body {
   background-color: #313131;
   width: 450px;
   margin: 20px;
+  overflow: hidden;
 }
 .MainDeportivos .Producto .imagen_producto {
   width: 100%;
+  transition: 0.5s;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+.MainDeportivos .Producto .imagen_producto:hover {
+  transform: scale(1.15);
 }
 .MainDeportivos .Producto p {
   color: white;
@@ -270,9 +337,24 @@ body {
   margin-left: 20px;
 }
 .MainDeportivos .Producto .precio {
-  text-align: right;
-  margin-right: 20px;
+  text-align: center;
+  margin-right: 0px;
   margin-bottom: 10px;
+  display: inline-block;
+}
+.MainDeportivos .Producto button {
+  background-color: #414141;
+  color: #079ef6;
+  margin-right: 245px;
+  margin-left: 15px;
+  padding: 5px 6px;
+  border-radius: 0.5rem;
+  border: 0;
+  transition: 0.5s;
+}
+.MainDeportivos .Producto button:hover {
+  background-color: #079ef6;
+  color: #414141;
 }
 
 footer {
@@ -367,7 +449,7 @@ footer .redes li a {
   .encabezado .Buscador button {
     border-radius: 0.5rem;
     color: #079ef6;
-    background-color: #525252;
+    background-color: linear-gradient(29deg, rgb(159, 159, 159) 0%, rgb(60, 60, 60) 100%);
     width: 60px;
     height: 25px;
     border: 0;
@@ -436,33 +518,36 @@ footer .redes li a {
   .main_contacto .telefono_contacto img {
     width: 12%;
   }
-  .main_contacto .telefono_contacto p {
+  .main_contacto .telefono_contacto .info_contacto {
     margin-bottom: 0;
     margin-left: 4%;
+    font-size: 30px;
   }
   .main_contacto .mail_contacto {
     width: 100%;
   }
   .main_contacto .mail_contacto img {
-    width: 10%;
+    width: 8%;
   }
   .main_contacto .mail_contacto .info_contacto {
     margin-left: 4%;
-    font-size: 30px;
-    margin-bottom: 0;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
   .main_contacto .direccion_contacto {
     width: 100%;
   }
   .main_contacto .direccion_contacto img {
-    width: 12%;
+    width: 10%;
   }
   .main_contacto .direccion_contacto .info_contacto {
     margin-left: 4px;
-    font-size: 30px;
-    margin-bottom: 0px;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
-  /*main de motos/deportivos/todoterreno responsive */
+  /*main de vehiculos responsive */
   .MainDeportivos {
     margin: 10% 10%;
   }
@@ -473,6 +558,9 @@ footer .redes li a {
   }
   .MainDeportivos .Producto p {
     font-size: 20px;
+  }
+  .MainDeportivos .Producto button {
+    margin-right: 120px;
   }
   /*barra de nav mobile*/
   .navegacion_mobile {

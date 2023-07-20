@@ -5,24 +5,6 @@
     justify-content: space-evenly;
     margin: 80px 80px;
     .Producto {
-        background-color: #313131;
-        width: 450px;
-        margin: 20px;
-        .imagen_producto {
-            width: 100%;
-        }
-        p {
-            color: white;
-            font-size: 25px;
-        }
-        .nombre {
-            margin-top: 2px;
-            margin-left: 20px;   
-        }
-        .precio {
-            text-align: right;
-            margin-right:20px;
-            margin-bottom: 10px;
-        }
+        @include estilo_productos;
     }
-}
+}   

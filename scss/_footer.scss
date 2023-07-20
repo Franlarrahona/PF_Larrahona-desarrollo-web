@@ -2,7 +2,7 @@ footer {
     display: flex;
     justify-content: space-between;
     border: 1px solid rgb(30, 29, 29);
-    background-color: #313131;
+    background-color: map-get($colores_web,color_secundario);
     margin-bottom: 0px; 
     .copy {
     

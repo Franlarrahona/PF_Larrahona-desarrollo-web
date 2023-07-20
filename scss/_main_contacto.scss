@@ -19,11 +19,16 @@
         background-image: url(../images/Auto_contacto_titulo.jpg);
         height: 135px;
         .h2_titulo_contacto{ 
-            font-family: 'Lobster', cursive;
+            font-family: $cursiva;
             font-size:89px;
-            color:#079ef6;
+            color: map-get($colores_web,color_primario);
             margin-right: 20px;
             text-decoration:underline;
+            animation-name: efecto_titulo;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-duration: 4s;
+            animation-delay: 1s;
         }
     }
     .telefono_contacto {
@@ -31,14 +36,19 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #313131;
+        background-color: map-get($colores_web,color_secundario);
         width: 550px;
         img{
             height: 60%;
+            animation-name: efecto_titulo;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-duration: 4s;
+            animation-delay: 1s;
         }
         .info_contacto {
-            font-family: 'Lobster', cursive;
-            color: #ffffff;
+            font-family: $cursiva;
+            color: map-get($colores_web,color_letra);
             font-size: 35px;
             margin-bottom: 0;
             margin-left: 10px;
@@ -49,17 +59,28 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #313131;
+        background-color: map-get($colores_web,color_secundario);
         width: 550px;
         img{
-            height: 60%;
+            height: 55%;
+            animation-name: efecto_titulo;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-duration: 4s;
+            animation-delay: 1s;
+            animation-name: efecto_titulo;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-duration: 4s;
+            animation-delay: 1s;
         }
         .info_contacto {
-            font-family: 'Lobster', cursive;
-            color: #ffffff;
+            font-family: $cursiva;
+            color: map-get($colores_web,color_letra);
             font-size: 35px;
             margin-left: 10px;
             margin-bottom: 0px;
+            
         }
     }
     .direccion_contacto {
@@ -67,14 +88,19 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #313131;
+        background-color: map-get($colores_web,color_secundario);
         width: 550px;
         img{
-            height: 60%;
+            height: 55%;
+            animation-name: efecto_titulo;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-duration: 4s;
+            animation-delay: 1s;
         }
         .info_contacto {
-            font-family: 'Lobster', cursive;
-            color: #ffffff;
+            font-family: $cursiva;
+            color: map-get($colores_web,color_letra);
             font-size: 35px;
             margin-bottom: 0;
             margin-left: 10px;
@@ -94,7 +120,7 @@
         align-items: center;
         justify-content: space-evenly;
         padding:20px;
-        background-color: #313131;
+        background-color: map-get($colores_web,color_secundario);
         margin-bottom: 40px;
             a {
             text-decoration: none;
