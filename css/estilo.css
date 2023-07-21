@@ -345,7 +345,7 @@ body {
 .MainDeportivos .Producto button {
   background-color: #414141;
   color: #079ef6;
-  margin-right: 245px;
+  margin-right: 230px;
   margin-left: 15px;
   padding: 5px 6px;
   border-radius: 0.5rem;
@@ -560,7 +560,7 @@ footer .redes li a {
     font-size: 20px;
   }
   .MainDeportivos .Producto button {
-    margin-right: 120px;
+    margin-right: 145px;
   }
   /*barra de nav mobile*/
   .navegacion_mobile {
