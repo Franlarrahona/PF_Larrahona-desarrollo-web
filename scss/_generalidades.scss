@@ -73,7 +73,7 @@ $cursiva : 'Lobster', cursive;
 /*mixin*/
 @mixin estilo_productos {
     background-color: map-get($colores_web,color_secundario);
-        width: 450px;
+        width: 480px;
         margin: 20px;
         overflow: hidden;
         .imagen_producto {
