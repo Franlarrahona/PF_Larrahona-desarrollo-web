@@ -374,7 +374,7 @@ body {
   justify-content: center;
 }
 .container .texto .producto_nombre {
-  margin-left: 40px;
+  margin-left: 0px;
 }
 .container .texto .producto_nombre h2 {
   color: #079ef6;

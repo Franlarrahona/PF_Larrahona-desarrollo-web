@@ -12,7 +12,7 @@
         flex-direction: column;
         justify-content: center;
         .producto_nombre{
-            margin-left: 40px;
+            margin-left: 0px;
             h2 {
                 color: map-get($colores_web, color_primario);
                 font-family: $cursiva;
