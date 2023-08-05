@@ -337,7 +337,8 @@ body {
   margin-left: 20px;
 }
 .MainDeportivos .Producto .precio {
-  text-align: center;
+  width: 240px;
+  text-align: end;
   margin-right: 0px;
   margin-bottom: 10px;
   display: inline-block;
@@ -345,7 +346,7 @@ body {
 .MainDeportivos .Producto button {
   background-color: #414141;
   color: #079ef6;
-  margin-right: 230px;
+  margin-right: 140px;
   margin-left: 15px;
   padding: 5px 6px;
   border-radius: 0.5rem;
@@ -355,6 +356,68 @@ body {
 .MainDeportivos .Producto button:hover {
   background-color: #079ef6;
   color: #414141;
+}
+
+.container {
+  background-color: #313131;
+  color: white;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  padding-left: 0px;
+}
+.container .imagen {
+  padding-left: 0;
+}
+.container .texto {
+  flex-direction: column;
+}
+.container .texto .producto_nombre {
+  margin-left: 40px;
+}
+.container .texto .producto_nombre h2 {
+  color: #079ef6;
+  font-family: "Lobster", cursive;
+  font-size: 70px;
+  animation-name: efecto_titulo;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-duration: 4s;
+  animation-delay: 1s;
+}
+.container .texto .descrip_producto {
+  margin-left: 0px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  margin-right: 10px;
+}
+.container .texto .descrip_producto p {
+  font-size: 19px;
+  height: 347px;
+}
+.container .texto .precio_contacto {
+  align-items: flex-end;
+  margin-bottom: 15px;
+  margin-left: 5px;
+}
+.container .texto .precio_contacto h3 {
+  font-size: 50px;
+  padding-left: 0;
+}
+.container .texto .precio_contacto .contenedor_boton {
+  text-align: end;
+  padding-right: 40px;
+}
+.container .texto .precio_contacto .contenedor_boton .boton {
+  background-color: #414141;
+  color: #079ef6;
+  border: 0;
+  padding: 0px 10px;
+  border-radius: 0.5rem;
+  font-size: 40px;
+}
+.container .texto .precio_contacto .contenedor_boton .boton:hover {
+  Background-color: #079ef6;
+  color: #313131;
 }
 
 footer {
@@ -399,7 +462,324 @@ footer .redes li a {
   font-size: 13px;
 }
 
-@media (max-width: 525px) {
+@media (min-width: 320px) and (max-width: 409px) {
+  /* Encabezado responsive */
+  .encabezado {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    background-color: #313131;
+    border: 1px solid rgb(30, 29, 29);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+  .encabezado h1 {
+    font-family: "Lobster", cursive;
+    text-align: start;
+    color: #079ef6;
+    font-size: 30px;
+    margin-left: 15px;
+    text-decoration: underline;
+    order: 1;
+  }
+  .encabezado div {
+    display: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .encabezado nav {
+    display: none;
+  }
+  .encabezado .Buscador {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .encabezado .Buscador input {
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 200px;
+    height: 25px;
+    width: 100px;
+    margin-right: 2px;
+    background-color: #414141;
+    border: 0;
+  }
+  .encabezado .Buscador button {
+    border-radius: 0.5rem;
+    color: #079ef6;
+    background-color: linear-gradient(29deg, rgb(159, 159, 159) 0%, rgb(60, 60, 60) 100%);
+    width: 40px;
+    height: 20px;
+    border: 0;
+    margin-left: 5px;
+    font-size: 14px;
+  }
+  /* Main index responsive*/
+  .main_index {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 20px;
+    padding: 10px;
+  }
+  .main_index .section1_index {
+    order: 1;
+    background-color: #313131;
+  }
+  .main_index .section1_index .titulo_index {
+    margin-top: 10px;
+    font-size: 17px;
+    text-align: center;
+  }
+  .main_index .section1_index .texto_index {
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .main_index .section2_index {
+    order: 2;
+    width: 100%;
+  }
+  .main_index .section3_index {
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .main_index .section3_index .caract_index_titulo {
+    text-align: center;
+    font-size: 15px;
+    text-decoration: underline;
+  }
+  .main_index .section3_index .info_index {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  /*main contacto responsive*/
+  .main_contacto {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    row-gap: 30px;
+  }
+  .main_contacto .titulo_contacto {
+    background-image: url(../images/Auto_contacto_titulo_mobile.jpg);
+  }
+  .main_contacto .titulo_contacto .h2_titulo_contacto {
+    font-size: 50px;
+  }
+  .main_contacto .telefono_contacto {
+    width: 100%;
+  }
+  .main_contacto .telefono_contacto img {
+    width: 12%;
+  }
+  .main_contacto .telefono_contacto .info_contacto {
+    margin-bottom: 0;
+    margin-left: 4%;
+    font-size: 30px;
+  }
+  .main_contacto .mail_contacto {
+    width: 100%;
+  }
+  .main_contacto .mail_contacto img {
+    width: 8%;
+  }
+  .main_contacto .mail_contacto .info_contacto {
+    margin-left: 4%;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .main_contacto .direccion_contacto {
+    width: 100%;
+  }
+  .main_contacto .direccion_contacto img {
+    width: 10%;
+  }
+  .main_contacto .direccion_contacto .maps_contacto {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+  .main_contacto .direccion_contacto .maps_contacto iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  .main_contacto .direccion_contacto .info_contacto {
+    margin-left: 4px;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  /*main de vehiculos responsive */
+  .MainDeportivos {
+    margin: 10% 10%;
+  }
+  .MainDeportivos .Producto {
+    flex-direction: column;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .MainDeportivos .Producto .nombre {
+    margin-left: 15px;
+  }
+  .MainDeportivos .Producto p {
+    font-size: 20px;
+  }
+  .MainDeportivos .Producto a {
+    display: inline-block;
+    width: 30%;
+  }
+  .MainDeportivos .Producto a button {
+    width: 100%;
+    margin: 0;
+    margin-left: 10px;
+  }
+  .MainDeportivos .Producto .precio {
+    text-align: end;
+    width: 65%;
+  }
+  /*main de productos responsive*/
+  .container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .container .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .row .imagen {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .container .row .imagen img {
+    width: 100%;
+    justify-content: center;
+  }
+  .container .row .texto {
+    padding: 0;
+  }
+  .container .row .texto .producto_nombre {
+    margin-left: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .container .row .texto .producto_nombre h2 {
+    font-size: 40px;
+    text-align: start;
+    margin-top: 5px;
+    padding-right: 0;
+  }
+  .container .row .texto .descrip_producto {
+    margin-left: 10px;
+    margin: 0;
+    width: 100%;
+  }
+  .container .row .texto .descrip_producto p {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 400px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    padding-right: 10px;
+  }
+  .container .row .texto .precio_contacto {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .container .row .texto .precio_contacto .precio h3 {
+    font-size: 30px;
+  }
+  .container .row .texto .precio_contacto .contenedor_boton button {
+    font-size: 23px;
+  }
+  /*barra de nav mobile*/
+  .navegacion_mobile {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    left: 0;
+    background-color: #222222;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+  }
+  .navegacion_mobile a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navegacion_mobile a img {
+    width: 45%;
+  }
+  .navegacion_mobile a .titulo_nav_mobile {
+    color: white;
+    font-size: 10px;
+    text-align: center;
+  }
+  /* Footer responsive */
+  footer {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-bottom: 0px;
+    padding: 10px;
+  }
+  footer .copy {
+    text-align: center;
+    margin: 10px;
+    font-size: 12px;
+  }
+  footer .medio {
+    margin: 8px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  footer .medio a {
+    font-size: 12px;
+    margin-right: 5px;
+  }
+  footer .redes {
+    margin-bottom: 50px;
+  }
+  footer .redes p {
+    display: none;
+  }
+  footer .redes ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  footer .redes ol a {
+    margin-right: 10px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 430px) and (min-width: 410px) {
   /* Encabezado responsive */
   .encabezado {
     display: flex;
@@ -541,6 +921,19 @@ footer .redes li a {
   .main_contacto .direccion_contacto img {
     width: 10%;
   }
+  .main_contacto .direccion_contacto .maps_contacto {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+  .main_contacto .direccion_contacto .maps_contacto iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
   .main_contacto .direccion_contacto .info_contacto {
     margin-left: 4px;
     font-size: 25px;
@@ -556,11 +949,72 @@ footer .redes li a {
     margin-left: 0%;
     margin-right: 0%;
   }
+  .MainDeportivos .Producto .nombre {
+    margin-left: 15px;
+  }
   .MainDeportivos .Producto p {
     font-size: 20px;
   }
-  .MainDeportivos .Producto button {
-    margin-right: 145px;
+  .MainDeportivos .Producto a {
+    display: inline-block;
+    width: 30%;
+  }
+  .MainDeportivos .Producto a button {
+    width: 100%;
+    margin: 0;
+    margin-left: 10px;
+  }
+  .MainDeportivos .Producto .precio {
+    text-align: end;
+    width: 65%;
+  }
+  /*main de productos responsive*/
+  .container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .container .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .row .imagen {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .container .row .imagen img {
+    width: 100%;
+    justify-content: center;
+  }
+  .container .row .texto {
+    padding: 0;
+  }
+  .container .row .texto .producto_nombre {
+    margin-left: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .container .row .texto .producto_nombre h2 {
+    font-size: 45px;
+    text-align: start;
+    margin-top: 5px;
+    padding-right: 0;
+  }
+  .container .row .texto .descrip_producto {
+    margin-left: 10px;
+    width: 400px;
+  }
+  .container .row .texto .precio_contacto {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+  }
+  .container .row .texto .precio_contacto .precio h3 {
+    font-size: 35px;
+  }
+  .container .row .texto .precio_contacto .contenedor_boton button {
+    font-size: 30px;
   }
   /*barra de nav mobile*/
   .navegacion_mobile {
@@ -615,6 +1069,306 @@ footer .redes li a {
   }
   footer .redes {
     margin-bottom: 50px;
+  }
+  footer .redes p {
+    display: none;
+  }
+  footer .redes ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  footer .redes ol a {
+    margin-right: 10px;
+    font-size: 10px;
+  }
+}
+@media (min-width: 431px) and (max-width: 480px) {
+  /* Encabezado responsive */
+  .encabezado {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    background-color: #313131;
+    border: 1px solid rgb(30, 29, 29);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+  .encabezado h1 {
+    font-family: "Lobster", cursive;
+    text-align: start;
+    color: #079ef6;
+    font-size: 40px;
+    margin-left: 15px;
+    margin-right: 50px;
+    text-decoration: underline;
+    order: 1;
+  }
+  .encabezado div {
+    display: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .encabezado nav {
+    display: none;
+  }
+  .encabezado .Buscador {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .encabezado .Buscador input {
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 200px;
+    height: 25px;
+    width: 110px;
+    margin-right: 3px;
+    background-color: #414141;
+    border: 0;
+  }
+  .encabezado .Buscador button {
+    border-radius: 0.5rem;
+    color: #079ef6;
+    background-color: linear-gradient(29deg, rgb(159, 159, 159) 0%, rgb(60, 60, 60) 100%);
+    width: 60px;
+    height: 25px;
+    border: 0;
+    margin-left: 5px;
+  }
+  /* Main index responsive*/
+  .main_index {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 20px;
+    padding: 10px;
+  }
+  .main_index .section1_index {
+    order: 1;
+    background-color: #313131;
+  }
+  .main_index .section1_index .titulo_index {
+    margin-top: 10px;
+    font-size: 17px;
+    text-align: center;
+  }
+  .main_index .section1_index .texto_index {
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .main_index .section2_index {
+    order: 2;
+    width: 100%;
+  }
+  .main_index .section3_index {
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .main_index .section3_index .caract_index_titulo {
+    text-align: center;
+    font-size: 15px;
+    text-decoration: underline;
+  }
+  .main_index .section3_index .info_index {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  /*main contacto responsive*/
+  .main_contacto {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    row-gap: 30px;
+  }
+  .main_contacto .titulo_contacto {
+    background-image: url(../images/Auto_contacto_titulo_mobile.jpg);
+    background-size: cover;
+  }
+  .main_contacto .titulo_contacto .h2_titulo_contacto {
+    font-size: 50px;
+  }
+  .main_contacto .telefono_contacto {
+    width: 100%;
+  }
+  .main_contacto .telefono_contacto img {
+    width: 12%;
+  }
+  .main_contacto .telefono_contacto .info_contacto {
+    margin-bottom: 0;
+    margin-left: 4%;
+    font-size: 30px;
+  }
+  .main_contacto .mail_contacto {
+    width: 100%;
+  }
+  .main_contacto .mail_contacto img {
+    width: 8%;
+  }
+  .main_contacto .mail_contacto .info_contacto {
+    margin-left: 4%;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .main_contacto .direccion_contacto {
+    width: 100%;
+  }
+  .main_contacto .direccion_contacto img {
+    width: 10%;
+  }
+  .main_contacto .direccion_contacto .info_contacto {
+    margin-left: 4px;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  /*main de vehiculos responsive */
+  .MainDeportivos {
+    margin: 10% 10%;
+  }
+  .MainDeportivos .Producto {
+    flex-direction: column;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .MainDeportivos .Producto .nombre {
+    margin-left: 15px;
+  }
+  .MainDeportivos .Producto p {
+    font-size: 20px;
+  }
+  .MainDeportivos .Producto a {
+    display: inline-block;
+    width: 30%;
+  }
+  .MainDeportivos .Producto a button {
+    width: 100%;
+    margin: 0;
+    margin-left: 10px;
+  }
+  .MainDeportivos .Producto .precio {
+    text-align: end;
+    width: 65%;
+  }
+  /*main de productos responsive*/
+  .container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .container .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .row .imagen {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .container .row .imagen img {
+    width: 100%;
+    justify-content: center;
+  }
+  .container .row .texto {
+    padding: 0;
+  }
+  .container .row .texto .producto_nombre {
+    margin-left: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .container .row .texto .producto_nombre h2 {
+    font-size: 45px;
+    text-align: start;
+    margin-top: 5px;
+  }
+  .container .row .texto .descrip_producto {
+    margin-left: 10px;
+    width: 400px;
+  }
+  .container .row .texto .precio_contacto {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .container .row .texto .precio_contacto .precio h3 {
+    font-size: 35px;
+  }
+  .container .row .texto .precio_contacto .contenedor_boton button {
+    font-size: 30px;
+  }
+  /*barra de nav mobile*/
+  .navegacion_mobile {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    left: 0;
+    background-color: #222222;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+  }
+  .navegacion_mobile a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navegacion_mobile a img {
+    width: 45%;
+  }
+  .navegacion_mobile a .titulo_nav_mobile {
+    color: white;
+    font-size: 10px;
+    text-align: center;
+  }
+  /* Footer responsive */
+  footer {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-bottom: 0px;
+    padding: 10px;
+  }
+  footer .copy {
+    text-align: center;
+    margin: 10px;
+    font-size: 12px;
+  }
+  footer .medio {
+    margin: 8px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  footer .medio a {
+    font-size: 12px;
+    margin-right: 5px;
+  }
+  footer .redes {
+    margin-bottom: 50px;
+  }
+  footer .redes p {
+    text-align: center;
+  }
+  footer .redes a {
+    margin-right: 10px;
   }
   .redes ol {
     display: flex;

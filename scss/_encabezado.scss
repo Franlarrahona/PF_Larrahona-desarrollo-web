@@ -19,7 +19,6 @@
         animation-timing-function: ease;
         animation-duration: 4s;
         animation-delay: 1s;
-
     }
     nav {
         order: 1;
@@ -67,7 +66,7 @@
             width: 145px;
             height: 30px;
             margin-right: 3px;
-            background-color:map-get($colores_web,color_cuaternario);;
+            background-color:map-get($colores_web,color_cuaternario);
             border: 0;
         } 
         button {

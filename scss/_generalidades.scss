@@ -7,12 +7,6 @@ $colores_web : (
     color_letra : 0,
     navegacion_mobile_color :0, 
 );
-
-
-
-
-
-
 /*condcionales*/
 /*temas disponibles: default/claro/oscuro/rainbow*/
 $tema : default;
@@ -57,18 +51,8 @@ $tema : default;
     color_letra : white,
     navegacion_mobile_color :#222222) }
 
-
-
-
-
-
 /*variables*/
 $cursiva : 'Lobster', cursive;
-
-
-
-
-
 
 /*mixin*/
 @mixin estilo_productos {
@@ -94,7 +78,8 @@ $cursiva : 'Lobster', cursive;
             margin-left: 20px;   
         }
         .precio {
-            text-align: center;
+            width: 240px;
+            text-align: end;
             margin-right:0px;
             margin-bottom: 10px;
             display: inline-block;
@@ -102,7 +87,7 @@ $cursiva : 'Lobster', cursive;
         button {
             background-color: map-get($colores_web,color_cuaternario);
             color: map-get($colores_web,color_primario);
-            margin-right: 230px;
+            margin-right: 140px;
             margin-left: 15px;
             padding: 5px 6px;
             border-radius: .5rem;
@@ -119,11 +104,24 @@ $cursiva : 'Lobster', cursive;
     flex-direction: column;
             margin-left: 0%;
             margin-right: 0%;
+            .nombre{
+                margin-left: 15px;
+            }
             p {
                 font-size: 20px;
             }
-            button{
-                margin-right: 145px;
+            a{ display: inline-block;
+                width: 30%;
+                button{
+                    width: 100%;
+                    margin:0;
+                    margin-left: 10px;
+                }
+            }
+            .precio{
+                text-align: end;
+                width: 65%;
+                
             }
 }
 

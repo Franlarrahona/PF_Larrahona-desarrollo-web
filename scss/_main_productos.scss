@@ -1,0 +1,68 @@
+.container {
+    background-color: map-get($colores_web, color_secundario);
+    color: white;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    padding-left: 0px;
+    .imagen{
+        padding-left: 0;
+    }
+    .texto{
+        flex-direction: column;
+        .producto_nombre{
+            margin-left: 40px;
+            h2 {
+                color: map-get($colores_web, color_primario);
+                font-family: $cursiva;
+                font-size: 70px;
+                animation-name: efecto_titulo;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease;
+                animation-duration: 4s;
+                animation-delay: 1s;
+            }
+        }
+        .descrip_producto{
+            margin-left:0px;
+            padding-top:10px ;
+            padding-bottom: 0px;
+            margin-right: 10px;
+            p{
+                font-size: 19px;
+                height:347px ;
+            }
+        }
+        .precio_contacto{
+            align-items: flex-end;
+            margin-bottom: 15px;
+            margin-left: 5px;
+            h3{
+                font-size: 50px;
+                padding-left: 0;
+            }
+            .contenedor_boton{
+                text-align: end;
+                padding-right: 40px;
+                .boton {
+                    background-color: map-get($colores_web,color_cuaternario);
+                    color: map-get($colores_web,color_primario);
+                    border: 0;
+                    padding: 0px 10px;
+                    border-radius: .5rem ;
+                    font-size: 40px;
+                    &:hover {
+                        Background-color: map-get($colores_web,color_primario);
+                        color: map-get($colores_web,color_secundario); 
+                    }
+                }
+            }
+        }
+    }   
+}
+
+
+
+
+
+
+
