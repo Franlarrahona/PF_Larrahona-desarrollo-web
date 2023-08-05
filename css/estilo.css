@@ -369,7 +369,9 @@ body {
   padding-left: 0;
 }
 .container .texto {
+  display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .container .texto .producto_nombre {
   margin-left: 40px;
@@ -378,6 +380,7 @@ body {
   color: #079ef6;
   font-family: "Lobster", cursive;
   font-size: 70px;
+  margin-bottom: 30px;
   animation-name: efecto_titulo;
   animation-iteration-count: infinite;
   animation-timing-function: ease;
@@ -392,7 +395,7 @@ body {
 }
 .container .texto .descrip_producto p {
   font-size: 19px;
-  height: 347px;
+  height: auto;
 }
 .container .texto .precio_contacto {
   align-items: flex-end;

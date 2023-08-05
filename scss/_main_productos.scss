@@ -8,13 +8,16 @@
         padding-left: 0;
     }
     .texto{
+        display: flex;
         flex-direction: column;
+        justify-content: center;
         .producto_nombre{
             margin-left: 40px;
             h2 {
                 color: map-get($colores_web, color_primario);
                 font-family: $cursiva;
                 font-size: 70px;
+                margin-bottom: 30px;
                 animation-name: efecto_titulo;
                 animation-iteration-count: infinite;
                 animation-timing-function: ease;
@@ -29,7 +32,7 @@
             margin-right: 10px;
             p{
                 font-size: 19px;
-                height:347px ;
+                height:auto ;
             }
         }
         .precio_contacto{
